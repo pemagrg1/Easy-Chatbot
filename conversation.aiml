@@ -32,6 +32,13 @@
 </category>
 
 <category>
+   <pattern>DO YOU KNOW WHO * IS?</pattern>
+   <template>
+      <srai>WHO IS <star/></srai>
+   </template>
+</category>
+  
+<category>
     <pattern>Once I *</pattern>
     <template>
         <random>
@@ -46,6 +53,30 @@
     </template>
 </category>
 
-
+<category>
+  <pattern>SCHOOL</pattern>
+  <template>School is an important institution in a child's life.</template>
+</category>
+  
+<category>
+  <pattern>_ SCHOOL</pattern>
+  <template>
+     <srai>SCHOOL</srai>  #this will call tht upper school pattern
+  </template>
+</category>
+  
+<category>
+  <pattern>SCHOOL *</pattern>
+  <template>
+     <srai>SCHOOL</srai>
+  </template>
+</category>
+  
+<category>
+  <pattern>_ SCHOOL *</pattern>
+  <template>
+     <srai>SCHOOL</srai>
+  </template>
+</category>
 
 </aiml>
