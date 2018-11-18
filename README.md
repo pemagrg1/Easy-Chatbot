@@ -19,8 +19,7 @@ Hope you know from the previous articles what each tag denotes and how to get st
 Here you will need 3 files:
 
 1 Python file: conversation.py<br>
-2 aiml file: learningFileList.aiml, and conversation.aiml
-conversation.py<br>
+2 aiml file: learningFileList.aiml, and conversation.aiml<br>
 
 Note: Kernal object is the public interface to the AIML interpreter. "learn" method loads the contents of an AIML file into the kernel. While "respond" method is used to get the response from the learned AIML file. And "LEARN AIML" is the pattern that k.respond from conversation.py calls. The <learn> tag loads the AIML file to respond.
 
