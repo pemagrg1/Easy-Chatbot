@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+
+<category>
+  <pattern> HELLO </pattern>
+  <template>
+     Hello! Nice to meet you.
+  </template>
+</category>
+
+<category>
+  <pattern> HELLO * </pattern>
+  <template>
+     Hello! Nice to meet you.
+  </template>
+</category>
+
+<category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+         <set name="name"><star/></set> is a nice name.
+      </template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY NAME</pattern>
+  <template>
+     Your name is <get name="name"/>.
+  </template>
+</category>
+
+<category>
+    <pattern>Once I *</pattern>
+    <template>
+        <random>
+            <li>Go on.</li>
+            <li>Can you be more specific?</li>
+            <li>I did not know that.</li>
+            <li>Are you telling the truth?</li>
+            <li>I don't know what that means.</li>
+            <li>Try to tell me that another way.</li>
+            <li>What is it?</li>
+        </random>
+    </template>
+</category>
+
+
+
+</aiml>
