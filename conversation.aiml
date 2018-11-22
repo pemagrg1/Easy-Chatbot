@@ -4,17 +4,18 @@
 <meta name="language" content="en"/>
 
 <category>
-  <pattern> HELLO </pattern>
-  <template>
-     Hello! Nice to meet you.
-  </template>
-</category>
-
-<category>
-  <pattern> HELLO * </pattern>
-  <template>
-     Hello! Nice to meet you.
-  </template>
+    <pattern>ONCE I *</pattern>
+    <template>
+        <random>
+            <li>Go on.</li>
+            <li>Can you be more specific?</li>
+            <li>I did not know that.</li>
+            <li>Are you telling the truth?</li>
+            <li>I don't know what that means.</li>
+            <li>Try to tell me that another way.</li>
+            <li>What is it?</li>
+        </random>
+    </template>
 </category>
 
 <category>
@@ -31,51 +32,201 @@
   </template>
 </category>
 
+
 <category>
-   <pattern>DO YOU KNOW WHO * IS?</pattern>
-   <template>
-      <srai>WHO IS <star/></srai>
-   </template>
-</category>
-  
-<category>
-    <pattern>Once I *</pattern>
-    <template>
+  <pattern>HELLO</pattern>
+  <template>
         <random>
-            <li>Go on.</li>
-            <li>Can you be more specific?</li>
-            <li>I did not know that.</li>
-            <li>Are you telling the truth?</li>
-            <li>I don't know what that means.</li>
-            <li>Try to tell me that another way.</li>
-            <li>What is it?</li>
+            <li>Hi</li>
+            <li>Hello</li>
+            <li>Hi!! Nice to meet you</li>
+            <li>Greetings :) </li>
+            <li>Hey! wassup?</li>
+            <li>Hello... Nice to meet you</li>
+            <li>Can you tell me your name by saying "My name is "</li>
         </random>
     </template>
 </category>
 
 <category>
-  <pattern>SCHOOL</pattern>
-  <template>School is an important institution in a child's life.</template>
-</category>
-  
-<category>
-  <pattern>_ SCHOOL</pattern>
+  <pattern>HI</pattern>
   <template>
-     <srai>SCHOOL</srai>  #this will call tht upper school pattern
+     <srai>HELLO</srai>
   </template>
 </category>
-  
+
 <category>
-  <pattern>SCHOOL *</pattern>
+  <pattern>HI *</pattern>
   <template>
-     <srai>SCHOOL</srai>
+     <srai>HELLO</srai>
   </template>
 </category>
-  
+
 <category>
-  <pattern>_ SCHOOL *</pattern>
+  <pattern>HELLO *</pattern>
   <template>
-     <srai>SCHOOL</srai>
+     <srai>HELLO</srai>
+  </template>
+</category>
+
+
+<category>
+  <pattern>BYE</pattern>
+  <template>
+        <random>
+            <li>bye</li>
+            <li>It was nice talking to you</li>
+            <li>tata!!</li>
+            <li>Let's talk again tomorrow :) </li>
+            <li>I hope that you had a great time.</li>
+            <li>bye take care</li>
+        </random>
+    </template>
+</category>
+
+<category>
+  <pattern>BYE *</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>GOOD BYE *</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>GOOD BYE</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>GOODBYE *</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>GOODBYE</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+<pattern>AM DONE *</pattern>
+    <template>
+        <srai>BYE</srai>
+    </template>
+</category>
+
+
+<category>
+  <pattern>YES</pattern>
+  <template>
+        <random>
+            <li>so?</li>
+            <li>:)</li>
+            <li>and?</li>
+            <li>uh huh..</li>
+            <li>ummm....</li>
+            <li>hmmm....</li>
+        </random>
+    </template>
+</category>
+
+<category>
+  <pattern>OK</pattern>
+  <template>
+     <srai>YES</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>OKAY</pattern>
+  <template>
+     <srai>YES</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>oh</pattern>
+  <template>
+     <srai>YES</srai>
+  </template>
+</category>
+
+
+<category>
+  <pattern>HOW ARE YOU</pattern>
+  <template>
+        <random>
+            <li>I'am doing good. What about you?</li>
+            <li>I'am fine. What about you?</li>
+            <li>So yo asking how I am? Well am fine.... What about you?</li>
+            <li>I'm fine. What about you?</li>
+            <li>I'm okay. What about you?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+  <pattern>WASSUP</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>HOW ARE YOU DOING?</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>HOW ARE YOU DOING *</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT ABOUT YOU*</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>WBU*</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+
+<category>
+      <pattern>MY PET NAME IS *</pattern>
+      <template>
+        <random>
+            <li> <set name="petname"><star/></set> is a cute pet name.</li>
+            <li> <set name="petname"><star/></set> is such a lovely name!</li>
+            <li> <set name="petname"><star/></set></li>
+        </random>
+      </template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY PET NAME</pattern>
+  <template>
+     Your pet name is <get name="petname"/>.
   </template>
 </category>
 
