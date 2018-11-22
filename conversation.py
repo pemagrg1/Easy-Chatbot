@@ -1,7 +1,7 @@
 import aiml
 
 k = aiml.Kernel()
-k.learn("learning_file_list.aiml")
+k.learn("learningFileList.aiml")
 k.respond("LEARN AIML")
 
 while True:
