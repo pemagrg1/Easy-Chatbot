@@ -30,7 +30,7 @@ code to load the files to train
 ##### conversation.aiml
 all the conversation patterns which the kernel will load for chatting
 
-Note: Kernal object is the public interface to the AIML interpreter. "learn" method loads the contents of an AIML file into the kernel. While "respond" method is used to get the response from the learned AIML file. And "LEARN AIML" is the pattern that k.respond from conversation.py calls. The <learn> tag loads the AIML file to respond.
+Note: Kernel object is the public interface to the AIML interpreter. "learn" method loads the contents of an AIML file into the kernel. While "respond" method is used to get the response from the learned AIML file. And "LEARN AIML" is the pattern that k.respond from conversation.py calls. The <learn> tag loads the AIML file to respond.
 
 #### Demo OUTPUT:
 ```Loading learning_file_list.aiml…done (0.07 seconds)
