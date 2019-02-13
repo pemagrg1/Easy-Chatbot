@@ -22,15 +22,20 @@
       <pattern>MY NAME IS *</pattern>
       <template>
          <set name="name"><star/></set> is a nice name.
+
       </template>
 </category>
 
 <category>
   <pattern>WHAT IS MY NAME</pattern>
   <template>
-     Your name is <get name="name"/>.
+        <random>
+            <li>Your name is <get name="name"/>.</li>
+            <li>so your name is  <get name="name"/>. </li>
+        </random>
   </template>
 </category>
+
 
 
 <category>
@@ -228,6 +233,39 @@
   <template>
      Your pet name is <get name="petname"/>.
   </template>
+</category>
+
+<category>
+   <pattern>SCHOOL</pattern>
+   <template>
+   <random>
+            <li>School is an important institution in a child's life.</li>
+            <li>School is a place where kids study. </li>
+            <li>School is an important institution for childrens.</li>
+            <li>School is a place where we gain knowledge.</li>
+        </random>
+   </template>
+</category>
+
+<category>
+   <pattern>_ SCHOOL</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>SCHOOL *</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>_ SCHOOL *</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
 </category>
 
 </aiml>
