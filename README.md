@@ -27,8 +27,9 @@ code for loading and running the bot
 ##### learningFilesList.aiml
 code to load the files to train
 
-##### conversation.aiml
-all the conversation patterns which the kernel will load for chatting
+##### data folder
+Data folder contains all the AIML files<br>
+Each aiml file contains the conversation patterns which the kernel will load for chatting
 
 Note: Kernel object is the public interface to the AIML interpreter. "learn" method loads the contents of an AIML file into the kernel. While "respond" method is used to get the response from the learned AIML file. And "LEARN AIML" is the pattern that k.respond from conversation.py calls. The <learn> tag loads the AIML file to respond.
 
@@ -42,3 +43,7 @@ bot > Hello! Nice to meet you.
 easy wasn't it? Add more to categories to the conversation.aiml so that your bot can answer to any questions! You can also make your chatbot to any domain specific like hotel booking, food ordering, flight booking,etc.
 
 Try it out and let me know how it goes 😍
+
+
+### PS:
+I added more data from the aiml package which you can get after installing: `pip install aiml`

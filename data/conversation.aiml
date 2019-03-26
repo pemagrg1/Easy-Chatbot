@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+
+<category>
+    <pattern>ONCE I *</pattern>
+    <template>
+        <random>
+            <li>Go on.</li>
+            <li>Can you be more specific?</li>
+            <li>I did not know that.</li>
+            <li>Are you telling the truth?</li>
+            <li>I don't know what that means.</li>
+            <li>Try to tell me that another way.</li>
+            <li>What is it?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+         <set name="name"><star/></set> is a nice name.
+
+      </template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY NAME</pattern>
+  <template>
+        <random>
+            <li>Your name is <get name="name"/>.</li>
+            <li>so your name is  <get name="name"/>. </li>
+        </random>
+  </template>
+</category>
+
+
+
+<category>
+  <pattern>HELLO</pattern>
+  <template>
+        <random>
+            <li>Hi</li>
+            <li>Hello</li>
+            <li>Hi!! Nice to meet you</li>
+            <li>Greetings :) </li>
+            <li>Hey! wassup?</li>
+            <li>Hello... Nice to meet you</li>
+            <li>Can you tell me your name by saying "My name is "</li>
+        </random>
+    </template>
+</category>
+
+<category>
+  <pattern>HI</pattern>
+  <template>
+     <srai>HELLO</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>HI *</pattern>
+  <template>
+     <srai>HELLO</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>HELLO *</pattern>
+  <template>
+     <srai>HELLO</srai>
+  </template>
+</category>
+
+
+<category>
+  <pattern>BYE</pattern>
+  <template>
+        <random>
+            <li>bye</li>
+            <li>It was nice talking to you</li>
+            <li>tata!!</li>
+            <li>Let's talk again tomorrow :) </li>
+            <li>I hope that you had a great time.</li>
+            <li>bye take care</li>
+        </random>
+    </template>
+</category>
+
+<category>
+  <pattern>BYE *</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>GOOD BYE *</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>GOOD BYE</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>GOODBYE *</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>GOODBYE</pattern>
+  <template>
+     <srai>BYE</srai>
+  </template>
+</category>
+
+<category>
+<pattern>AM DONE *</pattern>
+    <template>
+        <srai>BYE</srai>
+    </template>
+</category>
+
+
+<category>
+  <pattern>YES</pattern>
+  <template>
+        <random>
+            <li>so?</li>
+            <li>:)</li>
+            <li>and?</li>
+            <li>uh huh..</li>
+            <li>ummm....</li>
+            <li>hmmm....</li>
+        </random>
+    </template>
+</category>
+
+<category>
+  <pattern>OK</pattern>
+  <template>
+     <srai>YES</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>OKAY</pattern>
+  <template>
+     <srai>YES</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>oh</pattern>
+  <template>
+     <srai>YES</srai>
+  </template>
+</category>
+
+
+<category>
+  <pattern>HOW ARE YOU</pattern>
+  <template>
+        <random>
+            <li>I'am doing good. What about you?</li>
+            <li>I'am fine. What about you?</li>
+            <li>So yo asking how I am? Well am fine.... What about you?</li>
+            <li>I'm fine. What about you?</li>
+            <li>I'm okay. What about you?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+  <pattern>WASSUP</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>HOW ARE YOU DOING?</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>HOW ARE YOU DOING *</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT ABOUT YOU*</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>WBU*</pattern>
+  <template>
+     <srai>HOW ARE YOU</srai>
+  </template>
+</category>
+
+
+<category>
+      <pattern>MY PET NAME IS *</pattern>
+      <template>
+        <random>
+            <li> <set name="petname"><star/></set> is a cute pet name.</li>
+            <li> <set name="petname"><star/></set> is such a lovely name!</li>
+            <li> <set name="petname"><star/></set></li>
+        </random>
+      </template>
+</category>
+
+<category>
+  <pattern>WHAT IS MY PET NAME</pattern>
+  <template>
+     Your pet name is <get name="petname"/>.
+  </template>
+</category>
+
+<category>
+   <pattern>SCHOOL</pattern>
+   <template>
+   <random>
+            <li>School is an important institution in a child's life.</li>
+            <li>School is a place where kids study. </li>
+            <li>School is an important institution for childrens.</li>
+            <li>School is a place where we gain knowledge.</li>
+        </random>
+   </template>
+</category>
+
+<category>
+   <pattern>_ SCHOOL</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>SCHOOL *</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>_ SCHOOL *</pattern>
+   <template>
+      <srai>SCHOOL</srai>
+   </template>
+</category>
+
+</aiml>

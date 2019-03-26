@@ -1,9 +1,9 @@
 <aiml version="1.0">
     <category>
-        <pattern>LEARN AIML</pattern>
+        <pattern>LOAD AIML</pattern>
         <template>
             <!-- Load standard AIML set -->
-            <learn>conversation.aiml</learn>
+            <learn>data/*.aiml</learn>
         </template>
     </category>
 </aiml>
