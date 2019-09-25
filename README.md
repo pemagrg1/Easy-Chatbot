@@ -1,4 +1,8 @@
-Run `conversation.py` to run the bot
+INSTALLATION:
+<br> `pip install -r requirements.txt`
+<br><br>
+Python EXECUTION: Run `conversation.py` to run the bot<br>
+Web api EXECUTION: Run `bot.py`, once it runs, open the link and start chatting with the bot... <br>
 
 # Easy Chatbot using AIML
 
