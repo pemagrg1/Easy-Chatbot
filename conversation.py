@@ -2,7 +2,7 @@ import os
 import aiml
 from autocorrect import spell
 
-BRAIN_FILE="aiml_pretrained_model.dump"
+BRAIN_FILE="./pretrained_model/aiml_pretrained_model.dump"
 
 k = aiml.Kernel()
 
@@ -11,7 +11,7 @@ if os.path.exists(BRAIN_FILE):
     k.loadBrain(BRAIN_FILE)
 else:
     print("Parsing aiml files")
-    k.bootstrap(learnFiles="learningFileList.aiml", commands="load aiml")
+    k.bootstrap(learnFiles="./pretrained_model/learningFileList.aiml", commands="load aiml")
     print("Saving brain file: " + BRAIN_FILE)
     k.saveBrain(BRAIN_FILE)
 
