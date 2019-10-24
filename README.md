@@ -4,6 +4,9 @@ INSTALLATION:
 Python EXECUTION: Run `conversation.py` to run the bot<br>
 Web api EXECUTION: Run `bot.py`, once it runs, open the link and start chatting with the bot... <br>
 
+## DEMO
+![chatbotgif](https://github.com/pemagrg1/Easy-Chatbot/blob/master/multimedia/pema.gif)
+
 # Easy Chatbot using AIML
 
 As said in Wikipedia, AIML [Artificial Intelligence Markup Language] is an XML dialect for creating natural language software agents.
